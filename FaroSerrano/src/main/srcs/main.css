@@ -1,0 +1,60 @@
+/*Base Config*/
+
+@font-face {
+    font-family: 'Mofulina';
+        src: url('../src/font/mofulina/Mofulina.otf') format('opentype');
+}
+
+
+:root{
+    /*Fonts*/
+    --mainfont: Mofulina;
+    --secondfont: Calibri;
+    /*Colors*/
+    --maincolor: whitesmoke;
+    --secondcolor: Yellow;
+}
+
+/*Close Config*/
+
+body{
+    width: 1920px;
+    height: 1080px;
+}
+
+.bkg{
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+}
+
+.welcome{
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 22px;
+    font-family: var(--mainfont);
+    color: var(--maincolor);
+    margin-top: 100px;
+}
+
+
+.faroh1{
+    font-family: var(--mainfont);
+    color: var(--maincolor);
+    font-size: 100px;
+    text-align: center;
+    text-wrap: nowrap;
+    margin-top: 22px;
+    letter-spacing: 10px;
+}
+
+.faroh1:hover{
+    transition: 1s;
+    color: transparent;
+    -webkit-text-stroke: 0.0001mm var(--maincolor);
+}
+
+/* h1:hover{
+    font-family: var(--mainfont);
+} */

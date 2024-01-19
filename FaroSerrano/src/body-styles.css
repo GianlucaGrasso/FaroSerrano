@@ -1,0 +1,25 @@
+/*Base Config*/
+
+@font-face {
+    font-family: 'Mofulina';
+        src: url('../src/font/mofulina/Mofulina.otf') format('opentype');
+}
+
+
+:root{
+    /*Fonts*/
+    --mainfont: Mofulina;
+    --secondfont: Calibri;
+    /*Colors*/
+    --maincolor: Red;
+    --secondcolor: Yellow;
+}
+
+/*Close Config*/
+
+body{
+    margin: 0;
+    height: 100vh;  
+}
+
+/* linear-gradient(rgb(97, 97, 97), rgb(7, 7, 7));*/
