@@ -1,0 +1,50 @@
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.rrss-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 32vh;
+    bottom: 0; /* This will push the .rrss-section to the bottom */
+}
+
+.rrss-section ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.rrss-section li {
+    margin-inline: 18.25px; /* Adjust as needed */
+}
+
+.rrss-section li:first-child {
+    margin-left: 0;
+}
+
+.rrss-section li a {
+    text-decoration: none;
+    color: var(--maincolor);
+}
+
+/*FOOTER*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+    margin: 0px 0px -50px 0px;
+    width: 100%;
+    height: 50px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #6D4D40 0%, #022636 100%);
+}

@@ -11,15 +11,17 @@
     --mainfont: Mofulina;
     --secondfont: Calibri;
     /*Colors*/
-    --maincolor: Red;
+    --maincolor: whitesmoke;
     --secondcolor: Yellow;
 }
 
 /*Close Config*/
 
 body{
+    background-color: black;
     margin: 0;
-    height: 100vh;  
+    padding: 0;
+    height: 100vh; 
 }
 
 /* linear-gradient(rgb(97, 97, 97), rgb(7, 7, 7));*/

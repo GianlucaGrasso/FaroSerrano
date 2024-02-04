@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faro Serrano</title>
-    <link rel="stylesheet" href="srcs/style-navbar.css">
     <link rel="stylesheet" href="/FaroSerrano/src/body-styles.css">
-    <link rel="stylesheet" href="srcs/main.css">
+    <link rel="stylesheet" href="/FaroSerrano/src/main/main-style.css">
+    <link rel="stylesheet" href="/FaroSerrano/src/components-style.css">
 </head>
+
 <body>
-    <div class="backg"><video src="/FaroSerrano/src/img/videos/waves1440p.mp4" alt="bk" class="bkg" loop muted autoplay></div>
     <header>
-        <ul class="logotype">
-            <li><a href="main.html"><img src="/FaroSerrano/src/img/brand/logo.png" alt="logo" class="logo"></a></li>
-        </ul>
-        <nav>
-            <ul class="navigation">
-                <li>
-                    <a href="#">Villa Yacanto</a>
-                </li>
-
-                <li>
-                    <a href="#">Mar Azul</a>
-                </li>
-
-                <li>
-                    <a href="#">RR.SS</a>
-                </li>
-
-                <li>
-                    <a href="#">Nosotros</a>
-                </li>
-            </ul>
+        <nav class="logo-section">
+            <img src="/FaroSerrano/res/img/brand/Logo Faro Serrano.svg" alt="faroserrano">
         </nav>
     </header>
-    <div class="hero">
-        <p class="welcome">Bienvenidos a</p>
-        <h1 class="faroh1">FARO SERRANO</h1>
-    </div>
+    <a href="/FaroSerrano/src/Nosotros/nosotros.html" class="nosotros-button">NOSOTROS</a>
+    <div class="vy-side">
+        <div class="videovy">
+            <img src="/FaroSerrano/res/img/villa-yacanto-bk.png" alt="" class="vy-video">
+            <!-- <video src="/FaroSerrano/res/img/videos/pexels-pedro-slinger-18210851 (1440p).mp4" class="vy-video" autoplay muted loop></video> -->
+        </div>
+        <p class="heading-vy">VILLA YACANTO</p>
+        <p class="text-vy">Descubre Villa Yacanto de Calamuchita, un rincón encantador entre sierras. Sumérgete en la serenidad natural,
+            donde cada sendero revela la autenticidad de este pueblo acogedor. ¡Bienvenido a la tranquilidad de Villa
+            Yacanto, donde la naturaleza y la autenticidad se encuentran!</p>
+            <a href="/FaroSerrano/src/VillaYacanto/#" class="gotovy-text">Ir a Villa Yacanto <img src="https://s3-alpha-sig.figma.com/img/7f8f/ae75/4849c090b53509f353b09b36fd275b14?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YS~SgYMayS-mq7WugbW9LNx22VntKH9fRkxe2WYokfHQ2eC6-XhRotmJuvKxVPm1m5iZaylRiFjVaJTq3hfFr34MvGGJswIuwNY3kAAImz6DmQ7Ox5S3m7YSSj6cZ3XEJlg9pJn0~fkkiP2UFKWAjwtgxwhsSzlCSwgqJfuroRzUcyNtSmWwUjvFkDO0FWgJLdqENFUakCMcYpAwJ5WJwVyQCf64Z5g0nynkoM9Bu7t8FWYq8qvZJIQ2IUG-~mIPktJI9N5KgSxAJncd73WBv1EXBJev6BVvSk1GX8e~-OfZDGIEYSOKFLsbD6QQIHCLmBoQY2Xl1UOEfG7jqdIK9A__" alt="vydireccion" class="gotovy"></a>
+        </div>
+        <div class="mz-side">
+            <div class="videomz">
+                <img src="/FaroSerrano/res/img/mar-azul-bk.png" alt="" class="mz-video">
+                <!--<video src="/FaroSerrano/res/img/videos/waves1440p.mp4" class="mz-video" autoplay muted loop></video> -->
+            </div>
+            <div class="text-mzside">
+                <p class="heading-mz">MAR AZUL</p>
+                <p class="text-mz">Descubre Mar Azul, tu escape perfecto a playas doradas, atardeceres mágicos y la serenidad costera entre
+                    bosques encantados. Bienvenido al paraíso donde la vida es relajada, los senderos te invitan a explorar
+                    la magia de los bosques y cada día es una invitación a la calma. ¡Sumérgete en la belleza única de Mar
+                    Azul!</p>
+                    <a href="/FaroSerrano/src/MarAzul/#" class="gotomz-text">Ir a Mar Azul <img src="https://s3-alpha-sig.figma.com/img/7f8f/ae75/4849c090b53509f353b09b36fd275b14?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YS~SgYMayS-mq7WugbW9LNx22VntKH9fRkxe2WYokfHQ2eC6-XhRotmJuvKxVPm1m5iZaylRiFjVaJTq3hfFr34MvGGJswIuwNY3kAAImz6DmQ7Ox5S3m7YSSj6cZ3XEJlg9pJn0~fkkiP2UFKWAjwtgxwhsSzlCSwgqJfuroRzUcyNtSmWwUjvFkDO0FWgJLdqENFUakCMcYpAwJ5WJwVyQCf64Z5g0nynkoM9Bu7t8FWYq8qvZJIQ2IUG-~mIPktJI9N5KgSxAJncd73WBv1EXBJev6BVvSk1GX8e~-OfZDGIEYSOKFLsbD6QQIHCLmBoQY2Xl1UOEfG7jqdIK9A__" alt="mzdireccion" class="gotomz"></a>
+                </div>
+            </div>
+            <div class="rrss-section">
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Whatsapp</a></li>
+                    <li><a href="#">Tiktok</a></li>
+                </ul>
+            </div>
+
+    <footer>
+        <p style="color: whitesmoke;">&copy; Faro Serrano</p>
+    </footer>
 </body>
+
 </html>
