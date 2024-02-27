@@ -1,58 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faro Serrano</title>
-    <link rel="stylesheet" href="/FaroSerrano/src/body-styles.css">
-    <link rel="stylesheet" href="/FaroSerrano/src/main/main-style.css">
-    <link rel="stylesheet" href="/FaroSerrano/src/components-style.css">
+    <link rel="stylesheet" href="main-style.css">
+    <link rel="shortcut icon" href="/FaroSerrano/res/img/brand/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2bb7bd6bae.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="logo-section">
-            <img src="/FaroSerrano/res/img/brand/Logo Faro Serrano.svg" alt="faroserrano">
-        </nav>
-    </header>
-    <a href="/FaroSerrano/src/Nosotros/nosotros.html" class="nosotros-button">NOSOTROS</a>
-    <div class="vy-side">
-        <div class="videovy">
-            <img src="/FaroSerrano/res/img/villa-yacanto-bk.png" alt="" class="vy-video">
-            <!-- <video src="/FaroSerrano/res/img/videos/pexels-pedro-slinger-18210851 (1440p).mp4" class="vy-video" autoplay muted loop></video> -->
+
+    <!--LOGOTYPE-->
+    <div class="logo-us">
+        <a href="#"><img src="/FaroSerrano/res/img/brand/logo.png" alt="logo" class="logotype"></a>
+    </div>
+
+    <!--US BUTTON-->
+    <div class="us-sec">
+        <a href="#" class="us-a">NOSOTROS</a>
+    </div>
+
+    <!--BACKGROUNDS-->
+
+    
+        <div class="vy">
+            <div class="vy-side"></div>
         </div>
-        <p class="heading-vy">VILLA YACANTO</p>
-        <p class="text-vy">Descubre Villa Yacanto de Calamuchita, un rincón encantador entre sierras. Sumérgete en la serenidad natural,
-            donde cada sendero revela la autenticidad de este pueblo acogedor. ¡Bienvenido a la tranquilidad de Villa
-            Yacanto, donde la naturaleza y la autenticidad se encuentran!</p>
-            <a href="/FaroSerrano/src/VillaYacanto/#" class="gotovy-text">Ir a Villa Yacanto <img src="https://s3-alpha-sig.figma.com/img/7f8f/ae75/4849c090b53509f353b09b36fd275b14?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YS~SgYMayS-mq7WugbW9LNx22VntKH9fRkxe2WYokfHQ2eC6-XhRotmJuvKxVPm1m5iZaylRiFjVaJTq3hfFr34MvGGJswIuwNY3kAAImz6DmQ7Ox5S3m7YSSj6cZ3XEJlg9pJn0~fkkiP2UFKWAjwtgxwhsSzlCSwgqJfuroRzUcyNtSmWwUjvFkDO0FWgJLdqENFUakCMcYpAwJ5WJwVyQCf64Z5g0nynkoM9Bu7t8FWYq8qvZJIQ2IUG-~mIPktJI9N5KgSxAJncd73WBv1EXBJev6BVvSk1GX8e~-OfZDGIEYSOKFLsbD6QQIHCLmBoQY2Xl1UOEfG7jqdIK9A__" alt="vydireccion" class="gotovy"></a>
+        
+        <div class="mz">
+            <div class="mz-side"></div>
         </div>
-        <div class="mz-side">
-            <div class="videomz">
-                <img src="/FaroSerrano/res/img/mar-azul-bk.png" alt="" class="mz-video">
-                <!--<video src="/FaroSerrano/res/img/videos/waves1440p.mp4" class="mz-video" autoplay muted loop></video> -->
-            </div>
-            <div class="text-mzside">
-                <p class="heading-mz">MAR AZUL</p>
-                <p class="text-mz">Descubre Mar Azul, tu escape perfecto a playas doradas, atardeceres mágicos y la serenidad costera entre
+
+    <!--ARTICLES-->
+        <div class="container">
+
+            <article class="vy-text">
+                <h1 class="vy-heading">VILLA YACANTO</h1>
+                <p>Descubre Villa Yacanto de Calamuchita, un rincón encantador entre sierras. Sumérgete en la serenidad
+                    natural, donde cada sendero revela la autenticidad de este pueblo acogedor. ¡Bienvenido a la
+                    tranquilidad de Villa Yacanto, donde la naturaleza y la autenticidad se encuentran!</p>
+                <button class="goto-b"> <a href="#" class="goto-a">IR A VILLA YACANTO <i class="fa-regular fa-compass"></i> </a> </button>
+            </article>
+            
+            <article class="mz-text">
+                <h1 class="mz-heading">MAR AZUL</h1>
+                <p>Descubre Mar Azul, tu escape perfecto a playas doradas, atardeceres mágicos y la serenidad costera entre
                     bosques encantados. Bienvenido al paraíso donde la vida es relajada, los senderos te invitan a explorar
                     la magia de los bosques y cada día es una invitación a la calma. ¡Sumérgete en la belleza única de Mar
                     Azul!</p>
-                    <a href="/FaroSerrano/src/MarAzul/#" class="gotomz-text">Ir a Mar Azul <img src="https://s3-alpha-sig.figma.com/img/7f8f/ae75/4849c090b53509f353b09b36fd275b14?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YS~SgYMayS-mq7WugbW9LNx22VntKH9fRkxe2WYokfHQ2eC6-XhRotmJuvKxVPm1m5iZaylRiFjVaJTq3hfFr34MvGGJswIuwNY3kAAImz6DmQ7Ox5S3m7YSSj6cZ3XEJlg9pJn0~fkkiP2UFKWAjwtgxwhsSzlCSwgqJfuroRzUcyNtSmWwUjvFkDO0FWgJLdqENFUakCMcYpAwJ5WJwVyQCf64Z5g0nynkoM9Bu7t8FWYq8qvZJIQ2IUG-~mIPktJI9N5KgSxAJncd73WBv1EXBJev6BVvSk1GX8e~-OfZDGIEYSOKFLsbD6QQIHCLmBoQY2Xl1UOEfG7jqdIK9A__" alt="mzdireccion" class="gotomz"></a>
-                </div>
-            </div>
-            <div class="rrss-section">
-                <ul>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Whatsapp</a></li>
-                    <li><a href="#">Tiktok</a></li>
-                </ul>
-            </div>
+                    <button class="goto-b"> <a href="#" class="goto-a">IR A MAR AZUL <i class="fa-regular fa-compass"></i> </a> </button>
+            </article>
+
+    </div>
+
+
+    <!--REDES SOCIALES-->
+
+    <div class="rrss-sec">
+        <ul>
+            <li><a href="https://www.instagram.com/alojamientosfaroserrano/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://wa.me/5491161955097"><i class="fa-brands fa-whatsapp"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+        </ul>
+    </div>
 
     <footer>
-        <p style="color: whitesmoke;">&copy; Faro Serrano</p>
+        <p class="copy">
+           &copy;Faro Serrano
+        </p>
     </footer>
+
 </body>
 
 </html>

@@ -1,117 +1,271 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+
+:root{
+    --font: Open Sans;
+    --pcolor: rgb(245, 245, 245);
+    --scolor: #1c1c11;
+
+    --brown: rgba(109, 77, 64, 0.842);
+    --lightblue: rgba(2, 38, 54, 0.541); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Open Sans;
+    min-width: 100%;
+    background-color: var(--scolor);
 }
 
-/*FONDO Villa Yacanto*/
-.videovy .vy-video {
-    object-fit: cover;
-    z-index: -3;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 50%;
+
+/*LOGO*/
+
+.logotype{
+    height: 100px;
+    aspect-ratio: 4961/1666;
+    transition: all .3s ease;
 }
 
-/*FONDO Mar Azul*/
-.videomz .mz-video {
-    object-fit: cover;
-    z-index: -3;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 50%;
-    rotate: 180deg;
-    flex-shrink: 0;
+.logo-us{
+    width: fit-content;
+    margin: auto;
 }
 
-/*Boton redirije a NosotrosFS*/
-.nosotros-button {
-    /* Flexbox styling */
-    justify-content: center;
-    align-items: center;
+.logo-us img{
     display: flex;
+    justify-content: center;
+    margin: auto;
+    color: var(--pcolor);
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+}
 
-    /* Margins and padding */
-    margin: 60px 780px 60px 780px;
-    padding: 10px;
+/*BOTON NOSOTROS*/
 
-    /* Background styling */
-    background-color: rgba(0, 0, 0, 0.50);
+.us-sec{
+    margin: auto;
+    width: fit-content;
+    justify-content: center;
+}
 
-    /* Text styling */
-    text-wrap: nowrap;
-    color: var(--maincolor);
+.us-a{
+    background-color: transparent;
+    color: var(--pcolor);
+    border: var(--pcolor) solid 1px;
+    padding: 0.5em 2em;
+    border-radius: 0.5em;
     text-decoration: none;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 15px;
-
-    /* Border and width */
-    border-radius: 50px;
-    width: auto;
-
-    /* Filter effect */
-    filter: drop-shadow();
+    letter-spacing: 4px;
+    display: flex;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    transition: all 1s ease;
 }
 
-/*Texto lado Mar Azul*/
-.text-mzside {
-
+.us-a:hover{
+    scale: 1.05;
+    filter: blur(60px);
+    filter: drop-shadow(4px 4px 8px var(--pcolor));
 }
 
+/*SIDES*/
 
-/*NUEVO (revisar cambios h1)*/
-h1 {
-    color: #FFF;
-    font-family: "Open Sans";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 10px;
+.mz, .vy{
+    max-height: 1080px;
+    width: fit-content;
 }
 
-.text-mzside p {
-    color: whitesmoke;
-    font-size: 20px;
-    font-family: Open Sans;
-    font-weight: 400;
-    letter-spacing: 5px;
-    word-wrap: break-word;
-}
-
-/*GOTO Direcciones*/
-.gotovy{
-    rotate: 90deg;
-    width: 65px;
-}
-
-.gotomz{
-    rotate: 270deg;
-    width: 65px;
-}
-
-/*NEED FIX*/
-.gotomz-text{
-    color: var(--maincolor);
-    font-family: "Open Sans";
-    font-size: 48px;
-    font-weight: 400;
-    text-decoration: none;
-    line-height: normal;
-    letter-spacing: 10px;
-    rotate: 270deg;
+.vy-side{
+    background-image: url(https://lh3.ggpht.com/p/AF1QipPnv4G67bFkiT7t_PvAjeyGz_WMAQUOeoUW2u2h=s1536);
+    background-size: cover;
+    filter: saturate(1.75) contrast(0.95) brightness(.8);
     position: absolute;
-    right: 0;
-    vertical-align: middle;
+    top: 0;
+    /*
+    border: dashed red 1px ;
+    */
+    width: 50%;
+    height: 100%;
+    min-height: 100vh;
+    z-index: -2;
+    transition: all .3s ease;
 }
 
-.gotovy-text{
-    color: var(--maincolor);
+.mz-side{
+    background-image: url(/FaroSerrano/res/img/mar-azul-bk.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*
+    border: dashed yellow 1px ;
+    */
+    width: 50%;
+    height: auto;
+    min-height: 100vh;
+    z-index: -1;
+    transition: all .3s ease;
+}
+
+
+/*SIDES TEXT*/
+.container {
+    max-width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    gap: 10vw;
+}
+
+
+.vy-text, .mz-text{
+    color: var(--pcolor);
+    margin-left: 20px;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin-inline: 40px;
+}
+
+.vy-heading, .vy-text{
+    text-align: right;
+}
+
+.mz-heading, .mz-text{
+    text-align: left;
+}
+
+.vy-text, .mz-text, p{
+    width: 20rem;
+    font-size: 18px;
+}
+
+.vy-text{
+    text-align: right;
+}
+
+
+/*GOTO*/
+
+.goto-b{
+    background-color: transparent;
+    border: 1px solid var(--pcolor);
+    border-radius: 0.2em;
+    padding: 0.75em;
+    backdrop-filter: blur(20px);
+    transition: all 1s ease-in-out;
+    margin-top: 10px;
+}
+
+.goto-b:hover{
+    scale: 1.05;
+    filter: blur(60px);
+    filter: drop-shadow(4px 4px 8px var(--pcolor));
+}
+
+.goto-a{
+    font-size: 18px;
+    font-family: var(--font);
+    text-decoration: none;
+    color: var(--pcolor);
+}
+
+/*REDES SOCIALES*/
+
+.rrss-sec {
+    color: var(--pcolor);
+    border: var(--pcolor) solid 1px;
+    backdrop-filter: blur(20px);
+    border-radius: 2em;
+    width: fit-content;
+    padding: 1.6em 2em;
+    position: absolute;
+    margin-bottom: 2em;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0.75); /* Centrar horizontalmente y aplicar escala */
+}
+
+.rrss-sec ul {
+    list-style-type: none;
+    padding: 0; /* Eliminar el relleno predeterminado de la lista */
+    display: flex;
+    justify-content: center;
+}
+
+.rrss-sec ul li {
+    margin-inline: 1em; /* Ajustar el margen entre los elementos de la lista según sea necesario */
+}
+
+.fa-brands {
+    margin-inline: 1.5em;
+    scale: 3.25;
+    color: var(--pcolor);
+}
+
+.fa-whatsapp{
+    color: rgb(49, 228, 49);
+}
+
+/*FOOTER*/
+
+footer{
+    position: absolute;
+    top: 100%;
+    height: 50px;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(109, 77, 64, 1), rgba(2, 38, 54, 1));
+    min-width: 100%;
+    color: var(--pcolor);
+}
+
+.copy{
+    margin-top: 12.5px;
+}
+
+/*RESPONSIVENESS*/
+
+@media screen and (max-width: 1024px) {
+    img{
+        height: 100px;
+        scale: 0.75;
+        aspect-ratio: 4961/1666;
+    }
+    .container{
+        gap: 1vw;
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .container{
+        max-width: 400px;
+    }
+
+    .mz-text, .vy-text{
+        scale: .75;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container{
+        gap: 1vw;
+    }
+
+    .mz-text, .vy-text{
+        margin-inline: 1px;
+    }
+
+    .mz-text, .vy-text, p{
+        font-size: 10px;
+    }
 }
